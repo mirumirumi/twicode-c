@@ -6,17 +6,9 @@
   <Footer></Footer>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import Header from '@/components/layouts/Header.vue';
-import Footer from '@/components/layouts/Footer.vue';
+<script setup lang="ts">
+import { ref } from "vue"
 
-export default defineComponent({
-  components: {
-    Header,
-    Footer,
-  },
-})
 </script>
 
 <style lang="scss">
