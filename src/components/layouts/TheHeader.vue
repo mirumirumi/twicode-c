@@ -24,7 +24,7 @@
 
 <style scoped lang="scss">
 .header_wrap{
-  height: $header_hight;
+  height: $header_height;
   padding: 0 40px;
   header {
     display: flex;

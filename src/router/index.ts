@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import New from '../pages/New.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,7 +9,22 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/new',
     name: 'New',
-    component: New
+    component: () => import("../pages/BaseEditor.vue"),
+    props: { new: true },
+  },
+
+
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: () => import("../pages/BaseNote.vue"),
+    props: { content: "privacy" },
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: () => import("../pages/BaseNote.vue"),
+    props: { content: "terms" },
   },
 ]
 
