@@ -54,6 +54,8 @@
           margin: auto 0.7em;
           list-style: none;
           a {
+            color: #7F7F7F;
+            font-weight: bold;
             text-decoration: none;
           }
         }
