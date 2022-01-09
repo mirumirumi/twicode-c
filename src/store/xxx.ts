@@ -30,9 +30,9 @@ export const store = createStore<State>({
   },
   modules: {
   }
-});
+})
 
 export const key: InjectionKey<Store<State>> = Symbol();
 export const useStore = () => {
-  return baseUseStore(key);
-};
+  return baseUseStore(key)
+}

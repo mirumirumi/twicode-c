@@ -1,12 +1,14 @@
 /**
  * vars
  */
-$text:        #e4e4e4;
-$text_white:  #F2F2F2;
-$background:  #141422;
-$primary:     #49497B;
-$header_height: 76px;
-$footer_height: 42px; 
+$text:             #e4e4e4;
+$text_white:       #f2f2f2;
+$text_white_hover: #e3e3e3;
+$background:       #141422;
+$primary:          #49497B;
+$primary_hover:    #3b3b6a;
+$header_height:      76px;
+$footer_height:      41px; 
 
 
 /**
@@ -30,17 +32,25 @@ a {
   border: 2.3px solid transparent;
   border-radius: 4.4px;
   background-color: transparent;
-  transition: all 0.13s ease-in-out;
+  transition: all 0.07s ease-in;
   cursor: pointer;
   user-select: none;
   &.fill {
     color: $text_white;
     border-color: $primary;
     background-color: $primary;
+    &:hover {
+      color: text_white_hover;
+      border-color: $primary_hover;
+      background-color: $primary_hover;
+    }
   }
   &.outline {
-    color: $primary;
-    border-color: $primary;
+    color: #6a6aa1;
+    border-color: #57578c;
+    &:hover {
+      opacity: 0.777;
+    }
   }
 }
 

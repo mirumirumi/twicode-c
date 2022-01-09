@@ -3,7 +3,8 @@
     <footer>
       <div class="copyright">
         <ul class="rights">
-          <li><span>©mirumi</span></li>
+          <li><span>© {{ year }} mirumi</span></li>
+          <li><a href="https://github.com/mirumirumi?tab=repositories&q=twicode">Contribute on GitHub</a></li>
         </ul>
       </div>
     </footer>
@@ -11,18 +12,19 @@
 </template>
 
 <script setup lang="ts">
+const year = new Date().getFullYear()
 </script>
 
 <style scoped lang="scss">
 .footer_wrap {
   footer {
-    padding: 13px 0 0;
+    padding: 8px 0 9px;
     .copyright {
       ul.rights {
         display: flex;
         justify-content: center;
         margin: auto 37%;
-        padding: 0.3rem 0 5px;
+        padding: 0.3rem 0 0;
         // border-top: solid 1px #5e5e5e;
         li {
           margin: auto 0.7em;
@@ -32,6 +34,11 @@
             color: #7F7F7F;
             font-weight: 400;
             text-decoration: none;
+          }
+          a {
+            color: #7F7F7F;
+            font-weight: 400;
+            text-decoration: underline;
           }
         }
       }
